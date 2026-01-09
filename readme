@@ -1,0 +1,20 @@
+How to run:
+
+I made and ran this program on a Macbook with MacOS. To run it, I run the command "python3 automate.py", where the azure.conf and gcp.conf files are in teh same directory. All files generated from this program will also be found in the same directory.
+
+
+Specifications:
+
+If an image, resource group does not exist, or the name is invalid, the program shall simply inform the user and move on without attempting to create the VM.
+If the user does not enter a admin-password field in the vm then they shall be prompted to enter it in the terminal by the cli.
+User can also speicify a port to be open by adding the "port" argument to the .conf file with a number attached. E.g 80 for http.
+
+
+Addtional arguments:
+
+For Azure, the two additional arguments that can be speicified are "vm_size" and "disk_size".
+For GCP, the two additional arguments that can be specified are "machine_type" and "disk_size".
+
+Both of these are commented out in the .conf files attached with the submission.
+
+
