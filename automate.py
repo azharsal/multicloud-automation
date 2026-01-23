@@ -10,7 +10,7 @@ def execute_command(command, do_print):
     """
     Executes commands for azure and gcloud clis.
     """
-    try:
+    try: 
         result = subprocess.run(command, check=True, text=True, capture_output=True)
         if (do_print):
             print(f"Command executed successfully: {result.stdout}")
